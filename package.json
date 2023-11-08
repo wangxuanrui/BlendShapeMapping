@@ -1,0 +1,20 @@
+{
+  "name": "com.space.blendshapemapping",
+  "version": "0.0.1",
+  "displayName": "BlendShapeMapping",
+  "description": "面部融合映射工具",
+  "unity": "2018.1",
+  "documentationUrl": "https://example.com",
+  "author": {
+    "name": "Custom",
+    "email": "919179725@qq.com",
+    "url": "https://example.com"
+  },
+  "samples": [
+    {
+      "displayName": "sample",
+		"description": "This is Sample1",
+		"path": "Sample~/Sample1"
+    }
+  ]
+}

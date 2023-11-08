@@ -1,0 +1,15 @@
+{
+    "name": "BlendShapeMapping.Editor",
+    "references": [
+        "GUID:571616d0c42ef2d49b66261f27c72a5b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
