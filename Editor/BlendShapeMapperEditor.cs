@@ -5,6 +5,7 @@ using UnityEditor;
 
 namespace BlendShapeMapping
 {
+	
 	[CustomEditor(typeof(BlendShapeMapper))]
 	public class BlendShapeMapperEditor : Editor
 	{
