@@ -2,7 +2,7 @@
   "name": "com.space.blendshapemapping",
   "version": "0.0.1",
   "displayName": "BlendShapeMapping",
-  "description": "面部融合映射工具",
+  "description": "\u9762\u90e8\u878d\u5408\u6620\u5c04\u5de5\u5177",
   "unity": "2018.1",
   "documentationUrl": "https://example.com",
   "author": {
@@ -13,8 +13,8 @@
   "samples": [
     {
       "displayName": "sample",
-		"description": "This is Sample1",
-		"path": "Sample~/Sample1"
+      "description": "This is Sample1",
+      "path": "Sample~/Sample1"
     }
   ]
 }

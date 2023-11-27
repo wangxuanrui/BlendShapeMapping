@@ -19,9 +19,9 @@ namespace BlendShapeMapping
         /// </summary>
         /// <param name="locationName">The location name.</param>
         /// <returns>The location as an enum value.</returns>
-        public static ARKitBlendShapeType GetLocation(string locationName)
+        public static LiveLinkFaceBlendShapeType GetLocation(string locationName)
         {
-            return (ARKitBlendShapeType)Enum.Parse(typeof(ARKitBlendShapeType), locationName);
+            return (LiveLinkFaceBlendShapeType)Enum.Parse(typeof(LiveLinkFaceBlendShapeType), locationName);
         }
 
         /// <summary>

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace BlendShapeMapping {
@@ -9,18 +10,69 @@ namespace BlendShapeMapping {
     public class BlendShapeMapperCollections:MonoBehaviour
     {
         
-        public BlendShapeMapper[] BlendShapeMapperArray;
+        [SerializeField]
+        private BlendShapeMapper[] BlendShapeMapperArray;
+
+        public BlendShapeMapper[] GetBlendShapeMapperArray
+        {
+            get
+            {
+                return BlendShapeMapperArray;
+            }
+        }
+
+        public int BlendShapeMapperCount
+        {
+            get
+            {
+                return BlendShapeMapperArray.Length;
+            }
+        }
+
+        public BlendShapeMapper GetGetBlendShapeMapper(int index)
+        {
+            if (index<0 || index>=BlendShapeMapperArray.Length)
+            {
+                return null;
+            }
+            return BlendShapeMapperArray[index];
+        }
         
-        /// <summary>
-        /// 设置权重
-        /// </summary>
-        /// <param name="BlendIndex"></param>
-        /// <param name="value"></param>
+        
         public void PlayWeightData(float[] WeightData)
         {
-            for (int i = 0; i < BlendShapeMapperArray.Length; i++)
+            if (WeightData==null)
+                return;
+            
+            try
             {
-                BlendShapeMapperArray[i].PlayWeightData(WeightData);
+                for (int i = 0; i < BlendShapeMapperArray.Length; i++)
+                {
+                    BlendShapeMapperArray[i].SetWeight(WeightData);
+                }
+            }
+            catch (Exception e)
+            {
+               Debug.LogError(e.ToString());
+            }
+        }
+        
+        
+        public void PlayWeightData(LiveLinkFaceProtocol Data)
+        {
+            if (Data==null)
+                return;
+            
+            try
+            {
+                for (int i = 0; i < BlendShapeMapperArray.Length; i++)
+                {
+                    BlendShapeMapperArray[i].SetWeight(Data);
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.LogError(e.ToString());
             }
         }
         

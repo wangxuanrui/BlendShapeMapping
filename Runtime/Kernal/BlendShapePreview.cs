@@ -5,11 +5,9 @@ using System.Linq;
 
 namespace BlendShapeMapping {
     
-    
     [Serializable]
     public class BlendShapePreview
     {
-        
         public string[] BlendShapeSkinnedKeys;
         public List<BonesInfo> BonesInfoList=new List<BonesInfo>();
     }
@@ -22,7 +20,7 @@ namespace BlendShapeMapping {
         /// <summary>
         /// ARKit BS类型
         /// </summary>
-        public ARKitBlendShapeType ARKitBSType;
+        public LiveLinkFaceBlendShapeType ARKitBSType;
         /// <summary>
         /// 当前模型选择的Keys下标
         /// </summary>
@@ -30,12 +28,12 @@ namespace BlendShapeMapping {
 
         public BonesInfo(int BlendShapeType)
         {
-            this.ARKitBSType = (ARKitBlendShapeType) BlendShapeType;
+            this.ARKitBSType = (LiveLinkFaceBlendShapeType) BlendShapeType;
         }
         
         public BonesInfo(int BlendShapeType,int KeyIndex)
         {
-            this.ARKitBSType = (ARKitBlendShapeType) BlendShapeType;
+            this.ARKitBSType = (LiveLinkFaceBlendShapeType) BlendShapeType;
             this.SelectKeyIndex = KeyIndex;
         }
         
