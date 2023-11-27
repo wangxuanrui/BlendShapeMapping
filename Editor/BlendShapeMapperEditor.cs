@@ -185,11 +185,6 @@ namespace BlendShapeMapping
 								BSType = LiveLinkFaceBlendShapeType.BrowInnerUp,
 								Value = 1f
 				});
-				TMPData.Add(new BSData()
-				{
-								BSType = LiveLinkFaceBlendShapeType.EyeWideRight,
-								Value = 1f
-				});
 				Component.SetWeight(CreateMapperData(TMPData));
 			}
 
