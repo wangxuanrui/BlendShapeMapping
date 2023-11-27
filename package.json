@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "displayName": "BlendShapeMapping",
   "description": "\u9762\u90e8\u878d\u5408\u6620\u5c04\u5de5\u5177",
+   "keywords": [
+    "BlendShape",
+    "Face"
+  ],
   "unity": "2018.1",
   "documentationUrl": "https://example.com",
   "author": {
